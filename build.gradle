@@ -12,7 +12,7 @@ subprojects {
     apply plugin: 'maven-publish'
     
     ext {
-        springBootVersion = '1.5.12.RELEASE'
+        springBootVersion = '2.1.5.RELEASE'
         quartzVersion = '2.3.1'
     }
 
@@ -30,6 +30,7 @@ subprojects {
 
         implementation 'org.springframework.boot:spring-boot-starter-logging'
         implementation 'org.springframework:spring-context-support'
+        implementation 'org.springframework.boot:spring-boot-starter-quartz'
         implementation "org.quartz-scheduler:quartz:${quartzVersion}"
     }
 
